@@ -44,5 +44,7 @@ public class SubstituteAllTest {
 
 		String actualPrimePrime = Methods.substituteAll(actualPrime, '!', "not");
 		assertEquals("to be or not to be", actualPrimePrime);
+		
+		
 	}
 }

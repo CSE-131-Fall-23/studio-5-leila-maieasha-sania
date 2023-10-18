@@ -35,17 +35,22 @@ public class Methods {
 		// Blue ring with 3.0/4.0 the radius
 		// suggested rgb values: 0, 109, 219
 
+	
+			StdDraw.setPenColor(StdDraw.BLUE);
+			StdDraw.filledCircle(x, y, 0.75*radius);
+			
 		
-
 		// Red ring with 1.0/2.0 the radius
 		// suggested rgb values: 146, 0, 0
 
-		
+			StdDraw.setPenColor(StdDraw.RED);
+			StdDraw.filledCircle(x, y, 0.5*radius);
 
 		// Yellow ring with 1.0/4.0 the radius
 		// suggested rgb values: 255, 255, 109
 
-		
+			StdDraw.setPenColor(StdDraw.YELLOW);
+			StdDraw.filledCircle(x, y, 0.25*radius);
 	}
 
 	/**
@@ -63,6 +68,19 @@ public class Methods {
 		String result = "";
 		// TODO: Finish this method
 		
+		for (int i=0; i<source.length() ; i++) {
+			if (source.charAt(i) == target)
+			{
+				result = (result + replacement);
+			}	
+			else
+			{
+				result = (result + source.charAt(i));
+			}
+			
+		}
+
+		System.out.println(result);
 		return result;
 	}
 
